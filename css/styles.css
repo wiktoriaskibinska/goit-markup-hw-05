@@ -114,7 +114,7 @@ li {
   height: 4px;
   border-radius: 2px;
   position: absolute;
-  top: 49px;
+  top: 48px;
   display: block;
 }
 .is-activeB::after {
@@ -124,7 +124,7 @@ li {
   height: 4px;
   border-radius: 2px;
   position: absolute;
-  top: 49px;
+  top: 48px;
   display: block;
 }
 
@@ -518,6 +518,7 @@ img {
   animation-duration: 3s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
+
 
 }
 .closingbutton {
