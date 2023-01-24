@@ -30,7 +30,11 @@
             >
             <ul class="header_menu_list">
               <li class="header_menu_item">
-                <a href="index.html" class="header_menu_link is-activeA is-active">Agencja</a>
+                <a
+                  href="index.html"
+                  class="header_menu_link is-activeA is-active"
+                  >Agencja</a
+                >
               </li>
               <li class="header_menu_item">
                 <a href="portfolio.html" class="header_menu_link">Portfolio</a>
@@ -67,7 +71,9 @@
             EFEKTYWNE ROZWIĄZANIA <br />
             DLA WASZEGO BIZNESU
           </h1>
-          <button type="button" class="headline_button">Zamów usługę</button>
+          <button type="button" class="headline_button" data-modal-open>
+            Zamów usługę
+          </button>
         </div>
       </section>
     </header>
@@ -460,5 +466,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="closingbutton" data-modal-close>
+          <svg class="closeicon" width="11" height="11">
+            <use href="./images/icon.svg#close"> </use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

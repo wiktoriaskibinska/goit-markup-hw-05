@@ -17,6 +17,7 @@ body {
   background-color: var(--color-four);
   letter-spacing: 0.03em;
   font-size: 14px;
+  position: relative;
 }
 h1,
 h2,
@@ -356,6 +357,7 @@ figure {
   font-size: 14px;
   vertical-align: text-bottom;
 }
+
 /*portfolio.html*/
 
 .filters_list,
@@ -491,4 +493,64 @@ img {
   background-color: var(--color-five);
   margin-bottom: 30px;
   border-radius: 4px;
+}
+/*backdrop modal*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.modal {
+  width: 528px;
+  height: 581px;
+  background: var(--color-four);
+  position: relative;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+      animation-name: modal-open;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+
+}
+.closingbutton {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  text-align: center;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.closingbutton:hover {
+  cursor: pointer;
+}
+.closeicon {
+  fill: var(--color-seven);
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@keyframes modal-open {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
